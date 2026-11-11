@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crecimiento de plantas</title>
+    <link rel = "stylesheet" href = "css/style.css">
+    <script src="js/script.js" defer> </script>
+    
+</head>
+<body >
+    <header id = "Inicio">
+        <nav class = "navbar">
+            <h1>Huerto del CBTis 14</h1>
+            <ul class = "nav-links">
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href = #Crecimiento>Crecimiento</a></li>
+                <li><a href = "#Predicción">Predicción</a></li>
+                <li><a href = "#Documentación">Documentación</a></li>
+            </ul>
+        </nav>  
+    </header>
+    <br><br><br><br> <br>
+    <h1></h1>
+    <div class = "cuadro">
+        <h2>Esta página fue diseñada con el objetivo de calcular el crecimiento y etapa de las plantas según la temperatura diaria y el tipo de planta, así como también ofrecer una documentación sobre el proceso de creación del huerto. Para ello, se ofrecerá información sobre el tema de jardinería; cómo hacer recodos, obtener semillas de las frutas, entre otras cosas.</h2>
+    </div>
+    <br><br><br>
+    <h1 id = "Crecimiento">Crecimiento y etapa de las plantas según la temperatura</h1>
+    <h2>Para empezar, captura los siguientes datos sobre el día</h2>
+    <h3 id = "Día">Día 1</h3>
+    <div>
+        <h3 id = "tmax">Temperatura máxima registrada </h3>
+        <input type = number id = "Tmax" class="limpio">
+        <h3 id = "tmin">Temperatura mínima registrada</h3>
+        <input type = number id = "Tmin" class="limpio"> 
+    </div>
+    
+    <h2>Selecciona el tipo de planta del que quieres conocer su etapa de crecimiento</h2>
+    <select id = "Planta">
+        <option value = "tomate">Tomate</option>
+        <option value = "lechuga">Lechuga</option>
+        <option value = "zanahoria">Zanahoria</option>
+        <option value = "pimiento">Pimiento</option>
+        <option value = "girasol">Girasol</option>
+    </select>
+    
+    <br> <br>
+    <button onclick = "Calcular()">Calcular etapa de crecimiento</button>
+    <button onclick="Borrar()">Borrar registro</button>
+    <h1 id = "Predicción">Predicción del tiempo de cosecha según los datos anteriormente recolectados</h1>
+    <h2>Se recolectaron datos de una: </h2>
+    <h3 id="planta"></h3>
+    
+</body>
+</html>
